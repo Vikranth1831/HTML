@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table{
+                background-color: brown;
+                border-bottom: 2px solid black;
+                border-spacing: 50px;
+                padding: 10%;
+        text-align: left;
+            }
+            th,td {
+                padding: 10px;
+               
+                border-bottom: 2px solid black;
+                margin: 50%;
+                
+                
+                
+            }
+            td{
+                font-size: 20px;
+            }
+            tr:nth-child(even){
+                background-color: blanchedalmond;
+            }
+            tr:nth-child(odd){
+                background-color: aquamarine;
+            }
+
+            tr :hover {  background-color: wheat;
+
+            }
+        </style><!--when the mouse pointer is kept in the data we will see the hover effect-->
+    </head>
+ <!---  <body>
+        <table style="width: 50%;
+        text-align: center;">
+        <tr >
+            <th>Name</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>Vikranth</td>
+            <td>VK Inoovations</td>
+        </tr>
+         <tr>
+            <td>RK</td>
+            <td>VK Inoovations</td>
+        </tr>
+         <tr>
+            <td>Praneeth</td>
+            <td>VK Inoovations</td>
+        </tr>
+
+        </table>--> 
+        <body>
+        <hr>
+        <table style="border-bottom: 1px solid black;background-color: aliceblue;">
+            <colgroup>
+            <col span="2">
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+            <tr style="background-color: blueviolet;">
+            <th colspan="2">Name</th>
+             <th>Company</th>
+            <th>CTC</th>
+        </tr>
+       
+        <tr>
+            <td >shankar</td>
+            <td>Shafi</td>
+            <td>Mastaan IT.sol</td>
+            <td>4LPA</td>
+        </tr>
+         <tr>
+            <td>Reddy</td>
+            <td>Ranga</td>
+            <td>nelluru pedhareddy.pvt.sol</td>
+            <td>5.9LPA</td>
+        </tr>
+        <TR>
+            <td>Vaasu</td>
+            <td>Veerayya</td>
+            <td>VSR.grp.infra</td>
+            <td>3.6LPA</td>
+        </TR>
+        <TR>
+            <td>Vahini</td>
+            <td>Suresh</td>
+            <td>LVR.pvt.ltd</td>
+            <td>6.6LPA</td>
+        </TR>
+        
+        </table>
+    </body>
+</html>

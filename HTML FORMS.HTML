@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms
+        </title>
+
+    </head>
+    <body>
+        <form>
+            <label for="fname">first name:</label><br>
+            <input type="text" id="fname" name="fname" value="vikranth">
+            <br>
+            <label for="lname">last name:</label><br>
+            <input type="text" id="lname" name="lname" value="vicky">
+        </form>
+<p>choose ur fav sport</p>
+        <form>
+            <input type="radio" id="cricket" name="fav_sport" value="Cricket">
+            <label for="cricket">Cricket</label><br>
+            <input type="radio" id="Football" name="fav_sport" value="Foot Ball">
+            <lable for="Football">Foot Ball</lable><BR>
+                 <input type="radio" id="race" name="fav_sport" value="Running">
+            <lable for="race">Running</lable>
+        </form>
+        <h2>Check the 
+            Requirements</h2>
+        <form>
+            <input type="checkbox" id="1" name="Requirements" value="HTML">
+            <label for="1">HTML</label><br>
+            <input type="checkbox" id="2" name="Requirements" value="css">
+            <label for="2">CSS</label><br>
+            <input type="checkbox" id="3" name="Requirements" value="js">
+            <label for="3">JS</label><br>
+            <input type="checkbox" id="4" name="Requirements" value="react">
+            <label for="4">REACT</label><br>
+
+        </form>
+
+        <h3> Submit the Details</h3>
+        <form  action="/action_page.php" autocomplete="on" target="_parent" method="post">
+            <label for="fullname">Fullname</label><br>
+            <input type="text" id="fullname" name="fullname" value="Vikranth"><br>
+            <br>
+            <label for="company">Company</label><br>
+            <input type="text" id="company" name="company" value="VK Innovations"><br>
+            <br>
+            <label for="role">Job Role</label><br>
+            <input type="text" id="role" name="role" value="Intern"><br>
+            <br>
+            <label for="time">Duration</label>
+            <select id="time" name="time">
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+            </select><br>
+            <br>
+            <textarea name="msg" rows="10" cols="40">write your experience</textarea>
+            <br>
+            <input type="submit" value="Submit">
+
+
+        </form>
+        <h1>Button Element</h1>
+        <button type="button" onclick="alert('hello world')">Click Here</button>
+        <br>
+        <br>
+        <hr>
+        <h2>Fieldset and Legend Elements</h2>
+        <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+        <form>
+            <fieldset>
+                <legend>Persenol info</legend>
+                  <label for="fname">first name:</label><br>
+            <input type="text" id="fname" name="fname" value="vikranth">
+            <br>
+            <label for="lname">last name:</label><br>
+            <input type="text" id="lname" name="lname" value="vicky"><br>
+            <br>
+            <input type="submit" value="submit">
+
+            </fieldset>
+        </form>
+
+        <br>
+        <br>
+        <h1>The datalist Element</h1>
+            <p>The datalist element specifies a list of pre-defined options for an input element.<br>
+
+Users will see a drop-down list of the pre-defined options as they input data.
+<br>
+The list attribute of the input element, must refer to the id attribute of the datalist element.</p>
+    <br>
+    <form>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="crome">Crome</option>
+            <option value="firefox">Firefox</option>
+            <option value="safari">Safari</option>
+        </datalist>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h2> the Output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" name="a" value="30">100 +
+        <input type="number" id="b" name="b" value="70">=
+        <output name="x" for="a b"></output>
+            <br>
+            <input type="submit" value="submit">
+              
+    </form>
+    <br>
+    <hr>
+    <h1> Input Type</h1>
+    <h2>Text</h2>
+    <form>
+        <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname">
+
+    </form>
+    <br>
+    <br>
+    <h2>Password</h2>
+    <form>
+        <label for="User">Username:</label>
+        <input type="text" id="User" name="user">
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd">
+        <br>
+    </form>
+    <br>
+        <h2>Submit</h2>
+        <form>
+             <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname">
+        <br>
+        <input type="submit" value="Submit">
+
+        </form>
+        <br>
+        <h2>Reset</h2>
+        <form>
+             <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+
+        <br>
+        <h2>Radio</h2>
+        <p>Select Your Skills</p>
+        <form>
+           <input type="radio" id="Html" name="lang">
+           <label for="Html">HTML</label> <br>
+           <input type="radio" id="CSS" name="lang">
+           <label for="CSS">CSS</label> <br>
+           <input type="radio" id="Java" name="lang">
+           <label for="Java">JAVA</label>      
+        </form> 
+        <br>
+        <h2>
+            CheckBox
+        </h2>
+        <p>Check the List</p>
+        <form>
+            <input type="checkbox" id="item1" name="phone" value="Phone">
+            <label for="item1" >Phone</label><br>
+            <input type="checkbox" id="item2" name="charger" value="charger">
+            <label for="item2">Charger</label>
+        </form>
+        <br>
+        <h2>Button</h2>
+        <form>
+            <input type="button" onclick="alert('Hello..')" value="Click me"
+>
+        </form>
+        <br>
+        <h2>Color</h2>
+        <form>
+            <label for="favcolor">Select color</label>
+            <input type="color" id="favcolor" name="color" value="color">
+        </form>
+        <br>
+        <h2>DATE</h2>
+        <p>Select ur Birthday</p>
+        <form>
+            <label for="dob">Birth Date</label>
+            <input type="date" id="dob" name="dob">
+        </form>
+        <br>
+        <p>Using MIN and MAX attribute</p>
+        <form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+<br>
+<h2> Date and Time</h2>
+<form>
+     <label for="dob">Birth Date time</label>
+            <input type="datetime-local" id="dob" name="dob">
+
+</form>
+<br>
+<h2>
+    Email
+</h2>
+<form>
+    <label for="Email">Enter ur Email here:</label>
+    <input type="email" id="Email" name="Email">
+</form>
+<br>
+<h2>Image</h2>
+<form>
+     <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname">
+        <br>
+        <input type="image"  src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+<h2>File</h2>
+<form>
+    <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+
+</form>
+<h2>Hidden</h2>
+<form>
+     <label for="User">Username:</label>
+        <input type="text" id="User" name="user">
+        
+        <input type="hidden" id="cusid" name="cusid" value="1">
+        <input type="submit" value="submit">
+
+</form>
+<h2>Month</h2>
+        <p>Select ur Birthday month/year</p>
+        <form>
+            <label for="dob">Birth Date</label>
+            <input type="month" id="dob" name="dob">
+            <input type="submit" value="submit">
+        </form>
+
+        <br>
+        <h2>Number</h2>
+        <form>
+            <label for="num">select between 1 to 6</label><br>
+            <input type="number" id="num" name="num" min="1" max="6">
+        </form>
+        <br>
+        <h2>Range</h2>
+        <form>
+            <label for="quantity" >Quantity</label>
+            <input type="range" id="quantity" name="quantity" min="10" max="100">
+        </form>
+        <br>
+        <h2>Search</h2>
+        <form>
+            <label for="search">Google Search</label>
+            <input type="search" id="search" name="search">
+            <input type="submit" value="Submit">
+        </form>
+        <h2>TYPE TEL</h2>
+        <form>
+            <label for="mobilenum">Telephone Number</label>
+            <input type="tel" id="mobilenum" name="num" pattern="[0-9]{3}-[09]{2}-[0-9]{2}-[0-9]{3}" required>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <h2>Time</h2>
+        <form>
+            <label for="time">
+                select time
+            </label>
+            <input type="time" id="time" name="tm" value="TIME">
+        </form>
+        <br>
+        <h2>URL</h2>
+        <form>
+            <label for="hp">HomePage</label>
+            <input type="url" id="hp" name="homepage">
+        </form>
+        <br>
+        <h2>Week</h2>
+        <form>
+            <label for="Week">Select week</label>
+            <input type="week" id="Week" name="Week">
+        </form>
+                 
+        <h1>Attributes</h1>
+        <h2>
+            Readonly
+        </h2>
+        <form>
+        <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname" value="joe" readonly><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname" value="leo">
+
+    </form>
+    <br>
+    <h2>disabled</h2>
+    <form>
+        <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname" value="joe" disabled><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname" value="leo">
+
+    </form>
+    <br>
+    <h2>size</h2>
+    <form>
+        <label for="user">Username:</label><br>
+        <input type="text" id="user" name="user" size="10" autofocus><br>
+        <label for="password">Pin:</label><br>
+        <input type="text" id="password" name="pwd" maxlength="4" size="4"><br>
+        
+    </form>
+    <br>
+    <br>
+    <h2>multiple</h2>
+    <form>
+        <label for="files">select files</label>
+        <input type="file" id="files" name="file" multiple>
+
+    </form>
+<br>
+<br>
+<h2>
+    pattern and title 
+</h2>
+<form>
+    <label for="code">Country Code</label>
+    <input type="text" id="code" name="code" pattern="[A-Za-z]{3}" title="Country Code">
+</form>
+<br>
+<br>
+<h2>Datalist element list attribute</h2>
+<form>
+    <input list="Cars">
+    <datalist id="Cars">
+        <option value="Dodge"></option>
+        <option value="Mustang"></option>
+        <option value="GT"></option>
+        <option value="Porshe"></option>
+    </datalist>
+    <input type="submit"
+    value="Submit">
+</form>
+<br>
+<h2>autocomplete</h2>
+<br>
+ <form>
+             <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname" autocomplete="on"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname" autocomplete="off">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+
+
+        <br>
+        <br>
+        <h1>Input form Attributes</h1>
+        <br>
+        <h2>form attribute</h2>
+        <br>
+        <form id="form1">
+        <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname" value="joe"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname" value="leo">
+
+    </form>
+
+    <input type="submit" value="Submit" form="form1">
+<br>
+<br>
+<h2>Formmethod</h2>
+ <form id="form1" method="get">
+        <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname" value="joe"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname" value="leo">
+
+    </form>
+
+    <input type="submit" value="Submit by get" form="form1" >
+    <input type="submit" value="Submit by post" form="form1" formmethod="post">
+<br>
+<h2>Formtarget</h2>
+<form id="form1" method="get">
+        <label for="frname">Firstname</label>
+        <input type="text" id="frname" name="frname" value="joe"><br>
+         <label for="lsname">lastname</label>
+        <input type="text" id="lastname" name="lsname" value="leo">
+
+    </form>
+
+    <input type="submit" value="Submit by get" form="form1" >
+    <input type="submit" formtarget="_blank" value="open in new tab" form="form1">
+<br>
+<h2>
+    Novalidate
+</h2>
+<p>novalidate attribule make the server not to validate the input when the submit button is pressed</p>
+<form novalidate>
+    <label for="Email">Enter ur Email here:</label>
+    <input type="email" id="Email" name="Email">
+    <input type="submit" value="Submit">
+</form>
+    </body>
+</html>
